@@ -1,4 +1,4 @@
-package behavioral.mediator.fan_simulation;
+package behavioral.mediator;
 
 public class Demo {
     public static void main(String[] args) {
