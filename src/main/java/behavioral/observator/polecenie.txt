@@ -1,0 +1,10 @@
+Program demonstruje jeden z typowych problemów w programowaniu:
+jak powiązać dwie części aplikacji tak, żeby jedna reagowała od razu na zmiany w drugiej?
+
+Zaproponowane rozwiązanie jest bardzo mało wydajne i zasobożerne, jak widać po odpaleniu aplikacji instancje Widgetu co chwilę
+odpytują o ewentualne zmiany instancję Broadcastera co oznacza wiele pustych przebiegów, obciążenie aplikacji i konieczność obsługi
+niepotrzebnych zapytań
+
+Zastosuj wzorzec obserwator aby rozwiązać problem nadmiarowych zapytań o zmianę pogody. Możesz dowolnie zmieniać aplikację tak długo
+jak istota jej działania jest zachowana tzn. zmiana wartości zmiennej "actualWeather" w WeatherBroadcaster jest powiązana z
+natychmiastowym wywołaniem metod announceNewWeather obu widgetów.

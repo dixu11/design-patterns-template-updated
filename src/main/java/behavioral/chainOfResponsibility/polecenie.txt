@@ -1,0 +1,16 @@
+Program demonstruje problem wielu obiektów z których tylko jeden jest odpowiedzialny za wykonanie zadania.
+W zależności jaki jest poziom logowania takie logi będą wykonywane. Priorytety to:
+ERROR, WARNING, INFO, DEBUG
+
+Oznacza to, że przy ustawieniu WARNING wyświetlą się wiadomości o poziomie:
+ERROR, WARNING
+
+Przy poziomie INFO:
+ERROR, WARNING, INFO
+
+Program realizuje swoje zadanie jednak łamie wiele dobrych praktyk obiektowych:
+złamano:
+loose coupling ->  mamy zależność klasy Logger z wszystkimi konkretnymi loggingami
+Open/Close principle -> do aby dodać dodatkowy element łańcucha logowania należy całkiem zmienić implementację Loggera
+KIS -> kod głównej metody logującej jest bardzo skomplikowany (warunki ifa są niejasne na pierwszy rzut oka)
+Single Responsibility -> ciężko rozwijać klasy logujące niezaleznie od siebie

@@ -1,0 +1,2 @@
+Dodaj wzorzec mediator aby działanie aplikacji pozostało bez zmian
+a klasy Button Fan oraz PowerSupplier działały całkowicie niezależnie od siebie.
