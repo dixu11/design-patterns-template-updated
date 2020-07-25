@@ -1,2 +1,4 @@
 Dodaj wzorzec mediator aby działanie aplikacji pozostało bez zmian
-a klasy Button Fan oraz PowerSupplier działały całkowicie niezależnie od siebie.
+Klasy Button Fan oraz PowerSupplier mają całkowicie niezależnie od siebie
+To znaczy, że np. w klasie Fan nie powinno nigdzie występować odniesienie do klasy
+PowerSupplier

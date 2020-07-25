@@ -1,6 +1,6 @@
 package behavioral.mediator.fan_simulation;
 
-public class Main {
+public class Demo {
     public static void main(String[] args) {
         PowerSupplier supplier = new PowerSupplier();
         Fan fan = new Fan(supplier);
