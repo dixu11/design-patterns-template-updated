@@ -10,7 +10,7 @@ public class Demo {
         //wykonaj implementacje wzorca Singleton tak, aby
         //poniższy warunek został spełniony
 
-        if (station != station2) {
+        if (station == station2) {
             System.out.println("Bingo!");
         } else {
             System.out.println("Niepoprawnie zaimplementowany wzorzec Singleton");
