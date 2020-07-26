@@ -2,7 +2,7 @@ package behavioral.strategy;
 
 public class Demo {
     public static void main(String[] args) {
-        /*Zaimplementuj wzorzec Strategy tak, aby działanie metody display zależało od
+        /*Zaimplementuj wzorzec Strategy tak, aby działanie metody renderScreen zależało od
         * referencji przechowującej aktualny obiekt strategii.
         *
         * Zadbaj o to, żeby zmieniać strategię z normalnego wyświetlania na wygaszacz po przekroczeniu
