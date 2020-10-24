@@ -7,7 +7,7 @@ public class Demo {
         CommandStation station = new CommandStation();
         CommandStation station2 = new CommandStation();
 
-        //wykonaj implementacje wzorca Singleton tak, aby
+        //wykonaj implementacje wzorca Singleton, w klasie CommandStation tak, aby
         //poniższy warunek został spełniony
 
         if (station == station2) {

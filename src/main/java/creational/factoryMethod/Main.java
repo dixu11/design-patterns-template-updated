@@ -14,7 +14,7 @@ public class Main {
 
     /*
     * OCzekiwany wydruk z konsoli:
-    * "Gandalf atakuje za pomocą różdżki!"
-    * "Spartacus atakuje za pomocą miecza!"
+    * "Gandalf strzela za pomocą różdżki!"
+    * "Spartacus tnie za pomocą miecza!"
     * */
 }

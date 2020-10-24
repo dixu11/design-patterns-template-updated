@@ -1,8 +1,6 @@
 package behavioral.strategy;
 
-public class RenderNothingStrategy implements RenderStrategy {
-    @Override
-    public void render() {
-        System.out.println("NULL!");
-    }
+//TODO należy wykorzystać tę klasę - nie wyświetla niczego (możesz zrobić odpowiedniego souta :) )
+public class RenderNothingStrategy  {
+
 }
