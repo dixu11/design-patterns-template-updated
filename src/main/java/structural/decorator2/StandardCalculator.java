@@ -1,4 +1,4 @@
-package structural.decorator;
+package structural.decorator2;
 
 public class StandardCalculator implements Calculator{
 

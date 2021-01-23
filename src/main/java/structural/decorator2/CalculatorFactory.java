@@ -1,4 +1,4 @@
-package structural.decorator;
+package structural.decorator2;
 
 public interface CalculatorFactory {
     Calculator getStandardCalculator();

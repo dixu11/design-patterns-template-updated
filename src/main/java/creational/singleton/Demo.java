@@ -11,9 +11,9 @@ public class Demo {
         //poniższy warunek został spełniony
 
         if (station == station2) {
-            System.out.println("Bingo!");
+            System.out.println("Bingo! Ta sama referencja");
         } else {
-            System.out.println("Niepoprawnie zaimplementowany wzorzec Singleton");
+            System.out.println("Niepoprawnie zaimplementowany wzorzec Singleton - powstały dwa obiekty");
         }
 
 

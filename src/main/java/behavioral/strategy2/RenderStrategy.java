@@ -1,4 +1,4 @@
-package behavioral.strategy;
+package behavioral.strategy2;
 
 //TODO należy wykorzystać ten interfejs
 public interface RenderStrategy {

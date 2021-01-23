@@ -1,6 +1,4 @@
-package behavioral.strategy;
-
-import java.util.Random;
+package behavioral.strategy2;
 
 public class Monitor {
 

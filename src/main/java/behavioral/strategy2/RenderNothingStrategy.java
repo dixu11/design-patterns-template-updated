@@ -1,4 +1,4 @@
-package behavioral.strategy;
+package behavioral.strategy2;
 
 //TODO należy wykorzystać tę klasę - nie wyświetla niczego (możesz zrobić odpowiedniego souta :) )
 public class RenderNothingStrategy  {

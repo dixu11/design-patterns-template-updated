@@ -1,8 +1,7 @@
-package structural.decorator;
+package structural.decorator2;
 
 public class Demo {
     public static void main(String[] args) {
-        System.out.println("Test");
         /*
         * Za pomocą wzorca decorator spraw aby po odkomentowaniu działały poniższe funkcjonalności
         * Nie możesz modyfikować kodu main ani istniejących klas. Możesz wyłącznie dokładać własne, powodzenia!

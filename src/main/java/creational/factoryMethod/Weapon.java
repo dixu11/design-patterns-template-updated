@@ -2,5 +2,5 @@ package creational.factoryMethod;
 
 public abstract class Weapon {
 
-    public abstract void attack(String ownerName);
+    public abstract void attack();
 }

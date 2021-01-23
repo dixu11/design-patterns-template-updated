@@ -1,5 +1,4 @@
 Wykorzystaj wzorzec builder aby Ułatwić tworzenie obiektu Person
-- wymuś ustawianie 3 wartości: mail, fullname i address -> wymagane, birthdate i tel -> opcjonalne
 - wykorzystaj fluent interface
 - wykorzystaj statyczne metody aby ukryć całkowicie obecność buildera z punktu widzenia użytkownika modelu
-- stwóz metodę "buildDefaltPerson" zwracającą obiekt person z dowolnymi wymyślonymi przez Ciebie wartościami w każdym z pól
+- stwóz metodę "buildDefaultPerson" zwracającą obiekt person z dowolnymi wymyślonymi przez Ciebie wartościami w każdym z pól
