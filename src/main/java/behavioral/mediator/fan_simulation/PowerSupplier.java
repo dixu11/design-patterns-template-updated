@@ -1,4 +1,4 @@
-package behavioral.mediator;
+package behavioral.mediator.fan_simulation;
 
 public class PowerSupplier {
 
