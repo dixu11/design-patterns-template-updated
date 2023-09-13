@@ -1,1 +1,6 @@
 Główny obiekt wytwarza sobie pomocniczy obiekt.
+
+Istotą tego wzorca jest rozdzielenie abstrakcji od implementacji w kontekście tworzenia obiektów
+
+Tytułowa metoda wytwórcza to metoda abstrakcyjna używania a ogólnej klasie do "zarysowania" koncepcji składania
+obiektu z mniejszych pomocniczych obiektów

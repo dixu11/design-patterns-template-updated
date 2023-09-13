@@ -2,7 +2,13 @@ package creational.factoryMethod.tanksExample.tank;
 
 public abstract class Tank {
 
-    Barrel barrel;
+   private Barrel barrel;
+
+    public Tank(){
+        barrel = createBarrel();
+    }
+
+    public abstract Barrel createBarrel();
 
     public void setBarrel(Barrel barrel) {
         this.barrel = barrel;
