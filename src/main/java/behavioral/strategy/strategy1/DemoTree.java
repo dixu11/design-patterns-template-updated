@@ -1,4 +1,4 @@
-package behavioral.strategy;
+package behavioral.strategy.strategy1;
 
 public class DemoTree {
     public static void main(String[] args) {

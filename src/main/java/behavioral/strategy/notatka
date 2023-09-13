@@ -1,0 +1,41 @@
+    Przykłady zastosowań wzorca:
+
+    Zachowania lotu ptaków:
+        Strategia Latania: Szybki lot, powolny lot, nie latający.
+        Ptaki mogą zmieniać swoją strategię lotu w zależności od sytuacji.
+
+    Metody płatności w sklepie online:
+        Strategie płatności: Karta kredytowa, PayPal, przelew bankowy.
+        Użytkownik może wybrać preferowaną metodę płatności podczas składania zamówienia.
+
+    Kompresja plików:
+        Strategie kompresji: ZIP, RAR, 7z.
+        Użytkownik wybiera, w jakim formacie chce skompresować swoje pliki.
+
+    Algorytmy sortowania:
+        Strategie sortowania: Bąbelkowe, Quicksort, Mergesort.
+        W zależności od danych wejściowych można wybrać najbardziej odpowiedni algorytm sortowania.
+
+    Nawigacja GPS:
+        Strategie nawigacji: Najkrótsza trasa, unikanie opłat, pieszo, rowerem.
+        Użytkownik wybiera, jak chce dotrzeć do celu.
+
+    Zachowanie postaci w grze:
+        Strategie zachowania: Agresywna, defensywna, ucieczka.
+        W zależności od sytuacji w grze postać może zmieniać swoje zachowanie.
+
+    Rysowanie wykresów:
+        Strategie rysowania: Liniowy, słupkowy, kołowy.
+        Użytkownik wybiera, jaki wykres chce narysować na podstawie dostępnych danych.
+
+    Strategie inwestycyjne:
+        Strategie inwestycji: Konserwatywna, zrównoważona, agresywna.
+        Inwestor wybiera strategię w zależności od swojej tolerancji na ryzyko.
+
+    Strategie filtracji zdjęć:
+        Strategie filtracji: Sepia, czarno-biały, vintage.
+        Użytkownik może wybrać filtr do zastosowania na swoim zdjęciu.
+
+    Strategie promocji w marketingu:
+
+    Strategie promocji: Rabaty procentowe, kup jeden produkt - otrzymaj drugi za darmo, lojalnościowe programy punktowe.

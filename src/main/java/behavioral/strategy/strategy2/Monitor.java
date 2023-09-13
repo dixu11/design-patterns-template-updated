@@ -1,4 +1,4 @@
-package behavioral.strategy2;
+package behavioral.strategy.strategy2;
 
 public class Monitor {
 
