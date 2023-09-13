@@ -1,3 +1,11 @@
+    Kluczowe założenia:
+    Zmienność jednego z zachowań obiektu w trakcie działania aplikacji
+
+    Strategia – czynnościowy wzorzec projektowy, który definiuje rodzinę wymiennych algorytmów i kapsułkuje je w postaci klas.
+     Umożliwia wymienne stosowanie każdego z nich w trakcie działania aplikacji niezależnie od korzystających z nich użytkowników.
+
+
+
     Przykłady zastosowań wzorca:
 
     Zachowania lotu ptaków:
@@ -37,5 +45,4 @@
         Użytkownik może wybrać filtr do zastosowania na swoim zdjęciu.
 
     Strategie promocji w marketingu:
-
     Strategie promocji: Rabaty procentowe, kup jeden produkt - otrzymaj drugi za darmo, lojalnościowe programy punktowe.
