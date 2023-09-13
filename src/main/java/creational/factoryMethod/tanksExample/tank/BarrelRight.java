@@ -1,4 +1,4 @@
-package creational.tanksExample;
+package creational.factoryMethod.tanksExample.tank;
 
 public class BarrelRight extends Barrel {
     @Override
