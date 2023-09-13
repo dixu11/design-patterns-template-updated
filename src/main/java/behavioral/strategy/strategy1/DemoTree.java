@@ -25,5 +25,7 @@ public class DemoTree {
         tree.setSeason(new AutumnTreeStrategy());
         tree.show(); // wyświetla "liście opadają"
         */
+
+
     }
 }
