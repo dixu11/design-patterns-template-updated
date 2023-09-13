@@ -1,12 +1,17 @@
 package behavioral.observator;
 
-public class WeatherNotifier {
+public class WeatherNotifier implements WeatherListener {
 
 
 
-    public void showWeather(WeatherStation weatherStation) {
+    @Override
+    public void reactToWeatherChanged(WeatherDTO weatherDTO) {
+        showWeather(weatherDTO);
+    }
+
+    public void showWeather(WeatherDTO weatherDTO) {
         System.out.println("Weather changed!");
-        System.out.println("Temp: " + weatherStation.getTemp());
-        System.out.println("Pressure: " + weatherStation.getPressure());
+        System.out.println("Temp: " + weatherDTO.getTemp());
+        System.out.println("Pressure: " + weatherDTO.getPressure());
     }
 }
