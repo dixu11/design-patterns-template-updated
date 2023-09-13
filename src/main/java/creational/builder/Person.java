@@ -5,7 +5,7 @@ import lombok.Builder;
 import java.time.LocalDate;
 import java.util.Objects;
 
-@Builder
+//@Builder
 public class Person {
 
     private String fullName;
@@ -15,6 +15,9 @@ public class Person {
     private String address;
 
 
+    private Person() { // sabotuje lomboka!
+
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -42,7 +45,7 @@ public class Person {
                 '}';
     }
 
-   /* public static PersonBuilder builder(){
+    public static PersonBuilder builder(){
         return new PersonBuilder();
     }
 
@@ -83,6 +86,6 @@ public class Person {
         }
 
     }
-*/
+
 
 }

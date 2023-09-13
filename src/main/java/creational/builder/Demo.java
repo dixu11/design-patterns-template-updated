@@ -8,12 +8,12 @@ public class Demo {
         //przy wielu polach lub opcjonalnych polach
 
         //lombok
-        Person personL = Person.builder()
+     /*   Person personL = Person.builder()
                 .phone(123)
                 .mail("abc")
                 .build();
 
-        System.out.println(personL);
+        System.out.println(personL);*/
 
 
       /*  Person person = new Person("Anna Markowska",
@@ -21,13 +21,13 @@ public class Demo {
                 "Wojska Polskiego 2");*/
         //wykonaj polecenie z ar
 
-       /* Person person = Person.builder()
+        Person person = Person.builder()
                 .bornIn(LocalDate.now().minusYears(18))
                 .withFullName("Anna Markowska")
                 .withMail("markowska123@gmail.com")
                 .build();
         System.out.println(person);
-        System.out.println(Person.buildDummyPerson());*/
+        System.out.println(Person.buildDummyPerson());
 
 
     }
