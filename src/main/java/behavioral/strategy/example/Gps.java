@@ -1,7 +1,9 @@
 package behavioral.strategy.example;
 
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.function.Consumer;
 
 public class Gps {
 
@@ -50,6 +52,5 @@ class GpsDemo{
         System.out.println("Wyliczam trasę");
          distance = gps.calculateRead();
         System.out.println("Trasa: " + distance + "km");
-
     }
 }
