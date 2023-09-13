@@ -1,9 +1,8 @@
 package behavioral.strategy.example;
 
-import java.util.List;
+
 import java.util.Random;
-import java.util.Scanner;
-import java.util.function.Consumer;
+
 
 public class Gps {
 
