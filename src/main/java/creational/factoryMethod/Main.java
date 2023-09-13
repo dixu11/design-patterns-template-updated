@@ -6,7 +6,7 @@ public class Main {
         //nie możesz modyfikować kodu w tej klasie
         //wykorzystaj prostą implementację wzorca Factory Method
 
-      /*  Character mage = new Mage("Gandalf");
+        /*Character mage = new Mage("Gandalf");
         mage.attack();
         Character fighter = new Fighter("Spartacus");
         fighter.attack();*/
