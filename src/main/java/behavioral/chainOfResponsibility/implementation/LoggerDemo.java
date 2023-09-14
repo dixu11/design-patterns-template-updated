@@ -4,7 +4,8 @@ package behavioral.chainOfResponsibility.implementation;
 public class LoggerDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        Logger logger = new ErrorLogger(new WarningLogger(new InfoLogger(new DebugLogger(null))));
+        LoggerFactory factory = new LoggerFactory();
+        Logger logger = factory.getDefaultLogger();
 
 
         System.out.println("Test dla ustawienia: " + LogLvl.DEBUG); // powinny wyświetlić się wszystkie logi
@@ -17,7 +18,8 @@ public class LoggerDemo {
         Thread.sleep(1000); // czekam sekundę
         System.out.println("----");
         System.out.println("Test dla ustawienia: " + LogLvl.WARNING); // logi z niższym priorytetem niż WARNING nie powinny się wyświetlić
-        //logger.setMinLogLvl(LogLvl.WARNING);
+        logger = factory.getCustomLogger(LogLvl.WARNING);
+//        logger.setMinLogLvl(LogLvl.WARNING);
 
         logger.log("Debug który nie powinien się wyświetlić", LogLvl.DEBUG);
         logger.log("Info, które nie powinno się wyświetlić", LogLvl.INFO);

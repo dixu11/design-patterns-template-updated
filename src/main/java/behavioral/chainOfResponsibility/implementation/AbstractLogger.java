@@ -2,9 +2,9 @@ package behavioral.chainOfResponsibility.implementation;
 
 public abstract class AbstractLogger implements Logger{
 
-    private Logger nextLogger;
+    private AbstractLogger nextLogger;
 
-    public AbstractLogger(Logger nextLogger) {
+    public AbstractLogger(AbstractLogger nextLogger) {
         this.nextLogger = nextLogger;
     }
 
@@ -14,9 +14,25 @@ public abstract class AbstractLogger implements Logger{
             log(message);
         } else if (nextLogger != null){
             nextLogger.log(message,messageLevel);
-        }else{
-            System.out.println("UWAGA: brak obsługi: " + messageLevel);
         }
+
+     /*   else{
+            System.out.println("UWAGA: brak obsługi: " + messageLevel);
+        }*/
+    }
+
+    AbstractLogger findLoggerWith(LogLvl logLvl) {
+        if (getLoggerLevel() == logLvl) {
+            return this;
+        } else if (nextLogger != null){
+            return nextLogger.findLoggerWith(logLvl);
+        }else{
+            throw new IllegalStateException(logLvl + " not implemented");
+        }
+    }
+
+    public void unchain() {
+        nextLogger = null;
     }
 
    abstract   LogLvl getLoggerLevel();

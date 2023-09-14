@@ -1,7 +1,7 @@
 package behavioral.chainOfResponsibility.implementation;
 
 public class InfoLogger extends AbstractLogger {
-    public InfoLogger(Logger nextLogger) {
+    public InfoLogger(AbstractLogger nextLogger) {
         super(nextLogger );
     }
 

@@ -1,7 +1,7 @@
 package behavioral.chainOfResponsibility.implementation;
 
 public class WarningLogger extends AbstractLogger{
-    public WarningLogger(Logger nextLogger) {
+    public WarningLogger(AbstractLogger nextLogger) {
         super(nextLogger);
     }
 

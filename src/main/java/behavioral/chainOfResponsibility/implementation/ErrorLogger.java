@@ -3,7 +3,7 @@ package behavioral.chainOfResponsibility.implementation;
 public class ErrorLogger extends AbstractLogger {
 
 
-    public ErrorLogger(Logger nextLogger) {
+    public ErrorLogger(AbstractLogger nextLogger) {
         super(nextLogger);
     }
 
