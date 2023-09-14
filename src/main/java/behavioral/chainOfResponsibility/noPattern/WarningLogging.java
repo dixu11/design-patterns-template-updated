@@ -1,4 +1,4 @@
-package behavioral.chainOfResponsibility;
+package behavioral.chainOfResponsibility.noPattern;
 
 public class WarningLogging implements Logging {
     @Override
