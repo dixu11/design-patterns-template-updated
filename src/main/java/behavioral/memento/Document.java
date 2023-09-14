@@ -21,7 +21,13 @@ public class Document {
     }
 
     DocumentMemento createMemento() {
-        return new DocumentMemento(text,fontSize,color);
+        return new DocumentMemento(text, fontSize, color);
+    }
+
+    void revert(DocumentMemento memento) {
+        text = memento.getText();
+        fontSize = memento.getFontSize();
+        color = memento.getColor();
     }
 
     @Override

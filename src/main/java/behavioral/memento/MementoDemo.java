@@ -5,14 +5,29 @@ import java.awt.*;
 public class MementoDemo {
     public static void main(String[] args) {
         Document document = new Document();
-        System.out.println(document);
+       // System.out.println(document);
+        Caretaker caretaker = new Caretaker(document);
+        caretaker.save();
         document.append("Ala ");
+        caretaker.save();
         document.append("ma kota");
-        DocumentMemento memento = document.createMemento();
+        caretaker.save();
+        //DocumentMemento memento = document.createMemento();
         document.setFontSize(20);
+        caretaker.save();
         document.setColor(Color.BLUE);
         System.out.println(document);
-        System.out.println(memento);
+        caretaker.undo();
+        System.out.println(document);
+        caretaker.undo();
+        System.out.println(document);
+        caretaker.undo();
+        System.out.println(document);
+        caretaker.undo();
+        System.out.println(document);
+        caretaker.undo();
+        System.out.println(document);
+
 
     }
 }

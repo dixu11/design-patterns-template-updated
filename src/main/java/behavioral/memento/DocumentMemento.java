@@ -13,6 +13,18 @@ public class DocumentMemento {
         this.color = color;
     }
 
+    public String getText() {
+        return text;
+    }
+
+    public int getFontSize() {
+        return fontSize;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
     @Override
     public String toString() {
         return "DocumentMemento{" +
