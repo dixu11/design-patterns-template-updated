@@ -2,7 +2,12 @@ package behavioral.chainOfResponsibility.implementation;
 
 public class WarningLogger extends AbstractLogger{
     public WarningLogger(Logger nextLogger) {
-        super(nextLogger, LogLvl.WARNING);
+        super(nextLogger);
+    }
+
+    @Override
+    LogLvl getLoggerLevel() {
+        return LogLvl.WARNING;
     }
 
     @Override

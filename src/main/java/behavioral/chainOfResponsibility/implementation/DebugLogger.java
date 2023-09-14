@@ -3,7 +3,12 @@ package behavioral.chainOfResponsibility.implementation;
 public class DebugLogger extends AbstractLogger{
 
     public DebugLogger(Logger nextLogger) {
-        super(nextLogger, LogLvl.DEBUG);
+        super(nextLogger);
+    }
+
+    @Override
+    LogLvl getLoggerLevel() {
+        return LogLvl.DEBUG;
     }
 
     @Override

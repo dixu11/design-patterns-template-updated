@@ -4,7 +4,12 @@ public class ErrorLogger extends AbstractLogger {
 
 
     public ErrorLogger(Logger nextLogger) {
-        super(nextLogger, LogLvl.ERROR);
+        super(nextLogger);
+    }
+
+    @Override
+    LogLvl getLoggerLevel() {
+        return LogLvl.ERROR;
     }
 
     @Override
