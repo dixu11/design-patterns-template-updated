@@ -1,4 +1,4 @@
-package structural.example;
+package structural.decorator.example;
 
 public class TvBasic implements Tv{
 

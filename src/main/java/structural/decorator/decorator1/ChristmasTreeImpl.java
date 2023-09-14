@@ -1,4 +1,4 @@
-package structural.decorator;
+package structural.decorator.decorator1;
 
 public class ChristmasTreeImpl implements ChristmasTree {
 
