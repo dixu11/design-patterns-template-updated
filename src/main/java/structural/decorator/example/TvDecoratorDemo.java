@@ -1,10 +1,21 @@
 package structural.decorator.example;
 
 import javax.swing.*;
+import java.io.*;
 import java.util.Scanner;
 
 public class TvDecoratorDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+//        ObjectInputStream ois = new ObjectInputStream( new FileInputStream("archive.bin"));
+//       Product object = (Product) ois.readObject();
+
+
+
+
+
+
+
+
         Tv tv = new TvBasic(45);
         tv.display();
 
@@ -55,7 +66,7 @@ public class TvDecoratorDemo {
                         System.out.println("Button not implemented");
                     }
                 }
-        ) ;
+        );
         customPilot.pushButton1(); // display
         customPilot.pushButton2(); //special feature - youtube lub nie przypisano
 
