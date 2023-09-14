@@ -24,8 +24,5 @@ public class IteratorDemo {
                 strings.remove(string); // wysypie sie bo w for-each nie nalezy zmieniac struktury zbioru
             }
         }
-
-
-
     }
 }
