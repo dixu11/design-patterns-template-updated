@@ -7,6 +7,7 @@ public class MementoDemo {
         Document document = new Document();
        // System.out.println(document);
         Caretaker caretaker = new Caretaker(document);
+        // nie manipulujemy bezpośrednio stanem pamiątek - chowamy je za pomocniczą klasą
         caretaker.save();
         document.append("Ala ");
         caretaker.save();
