@@ -17,7 +17,7 @@ public class BaseItem implements Item{
 class Demo{
     public static void main(String[] args) {
         BaseItem baseItem = new BaseItem("Zwykły Item");
-        ItemWrapper itemWrapper = new ItemWrapper();
+        ItemWrapper itemWrapper = new ItemWrapper(baseItem);
         useItem(itemWrapper);
     }
 
