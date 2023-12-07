@@ -1,6 +1,7 @@
 package creational.builder;
 
 import java.time.LocalDate;
+import java.util.Optional;
 
 public class Demo {
     public static void main(String[] args) {
@@ -11,6 +12,11 @@ public class Demo {
                 .withPhone(1232343456)
                 .build();
         System.out.println(person);
+
+        Person jan = Person.createDefaultPerson();
+        System.out.println(jan);
+
+
 
 
        /* Person person = new Person("Anna Markowska",

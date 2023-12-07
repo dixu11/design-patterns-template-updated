@@ -20,6 +20,12 @@ public class Person {
         return new PersonBuilder();
     }
 
+    public static Person createDefaultPerson() {
+        return builder()
+                .withName("Jan Kowalski")
+                .build();
+    }
+
     /*public Person(String fullName, String mail, String address) {
         this.fullName = fullName;
         this.mail = mail;
