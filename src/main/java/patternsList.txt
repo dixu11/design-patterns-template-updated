@@ -2,18 +2,18 @@
             Budowniczy (obiektowy)  - wygodniejszy niż konstruktor sposób tworzenia obiektu (wieloetapowo i z opcjonalnymi parametrami)
             Fabryka abstrakcyjna (obiektowy), -wygodny interfejs do tworzenia obiektu z danej rodziny, za którym kryje
              się fabryka składająca obiekty w wybranym stylu np. tryb jasny tryb ciemny
-        Metoda wytwórcza (klasowy),
+            Metoda wytwórcza (klasowy) - sposób aby obiekt mógł stworzyć swój pomocniczy obiekt ale pozostał niezależny od doboru implementacji
         Prototyp (obiektowy) - dostarcza mechanizm kopiowania obiektów (wykorzystuje metodę clone z Object + zdecyduj jak głęboką kopię potrzebujesz)
             Singleton (obiektowy); - może istnieć maksymalnie 1 obiekt danego typu i jest ogólnodostępny
 
     wzorce strukturalne:
         Adapter (klasowy oraz obiektowy),
         Dekorator (obiektowy),
-        Fasada (obiektowy),
-        Kompozyt (obiektowy),
-        Most (obiektowy),
         Pełnomocnik (obiektowy),
+        Kompozyt (obiektowy),
         Pyłek (obiektowy);
+        Fasada (obiektowy),
+        Most (obiektowy),
 
     wzorce czynnościowe/operacyjne:
         Łańcuch zobowiązań/odpowiedzialności (obiektowy),
