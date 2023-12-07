@@ -16,7 +16,6 @@ public class WeatherStation {
     }
 
     private void updateWeather() {
-
         temperatureCelsius = random.nextInt(-20, 40);
         pressureHp = (random.nextDouble() - 0.5) * 20 + 1000; //990 - 1010
         weatherAnnouncer.announce(temperatureCelsius,pressureHp);
