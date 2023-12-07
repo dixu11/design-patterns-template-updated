@@ -6,7 +6,5 @@ public class Demo {
         //inna klasa komunikuje aktualną pogodę zaraz po pomiarze
 
         WeatherStation weatherStation = new WeatherStation();
-        System.out.println(weatherStation);
-
     }
 }
