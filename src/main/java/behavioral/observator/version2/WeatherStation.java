@@ -7,6 +7,8 @@ public class WeatherStation {
     private double temperatureCelsius;
     private double pressureHp;
     private Random random = new Random();
+    private WeatherAnnouncer weatherAnnouncer = new WeatherAnnouncer();
+    private WeatherForecaster weatherForecaster = new WeatherForecaster();
 
     public WeatherStation() {
         WeatherStationRunner runner = new WeatherStationRunner();
@@ -17,7 +19,8 @@ public class WeatherStation {
 
         temperatureCelsius = random.nextInt(-20, 40);
         pressureHp = (random.nextDouble() - 0.5) * 20 + 1000; //990 - 1010
-        System.out.println(this);
+        weatherAnnouncer.announce(temperatureCelsius,pressureHp);
+        weatherForecaster.forecast(temperatureCelsius, pressureHp);
     }
 
     @Override

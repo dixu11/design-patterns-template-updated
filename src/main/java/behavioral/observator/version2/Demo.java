@@ -5,6 +5,9 @@ public class Demo {
         //stacja generuje pomiary: temperatura, ciśnienie
         //inna klasa komunikuje aktualną pogodę zaraz po pomiarze
 
+        //obiekt obserwowany rozsyła informacje do zainteresowanych (nie na odwrót)
+
         WeatherStation weatherStation = new WeatherStation();
+       // WeatherAnnouncer weatherAnnouncer = new WeatherAnnouncer();
     }
 }
