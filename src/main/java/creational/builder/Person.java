@@ -10,8 +10,17 @@ public class Person {
     private int phone;
     private String mail;
     private String address;
+    //private PersonBuilder personBuilder = new PersonBuilder();
 
-    public Person(String fullName, String mail, String address) {
+    private Person() {
+
+    }
+
+    public static PersonBuilder builder(){
+        return new PersonBuilder();
+    }
+
+    /*public Person(String fullName, String mail, String address) {
         this.fullName = fullName;
         this.mail = mail;
         this.address = address;
@@ -38,7 +47,7 @@ public class Person {
         this.mail = mail;
         this.address = address;
     }
-
+*/
 
     @Override
     public boolean equals(Object o) {
@@ -65,4 +74,33 @@ public class Person {
                 ", address='" + address + '\'' +
                 '}';
     }
+
+   static public class PersonBuilder{ // static - wyłączy konieczność wiązania PersonBuildera z konkretnym już istniejącym Person
+
+       private Person person = new Person();
+
+        public PersonBuilder() {
+        }
+
+       public PersonBuilder withName(String name) {
+           person.fullName = name;
+           return this;
+       }
+
+       public PersonBuilder bornIn(LocalDate birthDate) {
+           person.birthDate = birthDate;
+           return this;
+       }
+
+       public PersonBuilder withPhone(int phone) {
+           person.phone = phone;
+           return this;
+       }
+
+       public Person build() {
+           return person;
+       }
+
+    }
+
 }

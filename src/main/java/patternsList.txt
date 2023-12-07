@@ -3,7 +3,7 @@
         Fabryka abstrakcyjna (obiektowy),
         Metoda wytwórcza (klasowy),
         Prototyp (obiektowy),
-        Singleton (obiektowy);
+            Singleton (obiektowy); - może istnieć maksymalnie 1 obiekt danego typu i jest ogólnodostępny
 
     wzorce strukturalne:
         Adapter (klasowy oraz obiektowy),
