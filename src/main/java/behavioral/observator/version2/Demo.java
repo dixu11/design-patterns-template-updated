@@ -4,6 +4,7 @@ public class Demo {
     public static void main(String[] args) throws InterruptedException {
         //stacja generuje pomiary: temperatura, ciśnienie
         //inna klasa komunikuje aktualną pogodę zaraz po pomiarze
+        //przekazywane informacje są pakowane do jednego obiektu, często nazywanego eventem
 
         //obiekt obserwowany rozsyła informacje do zainteresowanych (nie na odwrót)
         //obiekt obserwowany nie zna konkretnych klas zainteresowanych, wysyła im dane po interfejsie

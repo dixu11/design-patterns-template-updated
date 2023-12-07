@@ -4,12 +4,12 @@ public class WeatherAnnouncer implements WeatherClient {
 
 
     @Override
-    public void consume(double temperature, double pressure) {
-        announce(temperature,pressure);
+    public void consume(Weather weather) {
+        announce(weather);
     }
 
-    private void announce(double temp, double pressure) {
-        System.out.printf("Temp: %.2f  Ciśnienie wynosi: %.2f\n",
-                temp, pressure);
+    private void announce(Weather weather) {
+        System.out.printf("Temp: %.2f  Ciśnienie wynosi: %.2f Wilgotność: %.2f cm opadów Szansa na opad śniegu: %.0f %% \n",
+                weather.temperature(), weather.pressure(), weather.humidity(), weather.chanceForSnow()*100);
     }
 }
