@@ -17,4 +17,10 @@ public class Main {
     * "Gandalf strzela za pomocą różdżki!"
     * "Spartacus tnie za pomocą miecza!"
     * */
+
+
+    /*
+    * 1. obiekt broni tworzony w metodzie attack
+    * 2. obiekt broni dostarczany przez konstruktor (default dostęp) w  Character
+    * */
 }
