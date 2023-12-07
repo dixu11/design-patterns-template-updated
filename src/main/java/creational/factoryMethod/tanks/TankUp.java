@@ -1,7 +1,9 @@
 package creational.factoryMethod.tanks;
 
 public class TankUp extends Tank{
-    public TankUp(Barrel barrel) {
-        super(barrel);
+
+    @Override
+    Barrel createBarrel() {
+        return new BarrelLeft();
     }
 }
