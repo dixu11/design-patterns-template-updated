@@ -8,23 +8,27 @@ public class WeatherStation {
 
     private double temperatureCelsius;
     private double pressureHp;
-    private Random random = new Random();
+    private final Random random = new Random();
 
-    private List<WeatherClient> clients = new ArrayList<>();
+    private final List<WeatherClient> clients = new ArrayList<>();
 
     public WeatherStation() {
         WeatherStationRunner runner = new WeatherStationRunner();
         runner.start();
     }
 
-    public void addClient(WeatherClient weatherClient) {
-        clients.add(weatherClient);
-    }
-
     private void updateWeather() {
         temperatureCelsius = random.nextInt(-20, 40);
         pressureHp = (random.nextDouble() - 0.5) * 20 + 1000; //990 - 1010
         clients.forEach(client -> client.consume(temperatureCelsius,pressureHp));
+    }
+
+    public void addClient(WeatherClient weatherClient) {
+        clients.add(weatherClient);
+    }
+
+    public void removeClient(FireAlarm fireAlarm) {
+        clients.remove(fireAlarm);
     }
 
     @Override
