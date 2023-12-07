@@ -1,8 +1,9 @@
     wzorce kreacyjne:
-        Budowniczy (obiektowy),
-        Fabryka abstrakcyjna (obiektowy),
+            Budowniczy (obiektowy)  - wygodniejszy niż konstruktor sposób tworzenia obiektu (wieloetapowo i z opcjonalnymi parametrami)
+            Fabryka abstrakcyjna (obiektowy), -wygodny interfejs do tworzenia obiektu z danej rodziny, za którym kryje
+             się fabryka składająca obiekty w wybranym stylu np. tryb jasny tryb ciemny
         Metoda wytwórcza (klasowy),
-        Prototyp (obiektowy),
+        Prototyp (obiektowy) - dostarcza mechanizm kopiowania obiektów (wykorzystuje metodę clone z Object + zdecyduj jak głęboką kopię potrzebujesz)
             Singleton (obiektowy); - może istnieć maksymalnie 1 obiekt danego typu i jest ogólnodostępny
 
     wzorce strukturalne:
@@ -27,3 +28,7 @@
         Strategia (obiektowy),
         Odwiedzający/Wizytator (ang. visitor) (obiektowy),
         Zabór Zasobu Jest Inicjalizacją (obiektowy).
+
+
+-> klasyczny builder
+-> abstrakcyjna fabryka w kodzie

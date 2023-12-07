@@ -10,10 +10,15 @@ public class Person {
     private int phone;
     private String mail;
     private String address;
+
+  //  private Address address;
     //private PersonBuilder personBuilder = new PersonBuilder();
 
     private Person() {
 
+    /*    Person copy = new Person();
+        copy.mail = mail;
+        copy.address = new Address (address.getCountry());*/
     }
 
     public static PersonBuilder builder(){

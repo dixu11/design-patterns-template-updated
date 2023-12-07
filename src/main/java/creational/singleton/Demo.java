@@ -6,6 +6,9 @@ public class Demo {
    private static CommandStation station2;
 
     public static void main(String[] args) throws InterruptedException {
+
+
+
         //eager - podstawowa 'gorliwa' implementacja Singleton
         //lazy - zabezpiecza przed tworzeniem obiektu gdy nie jest on potrzebny - nie jest bezpieczna wielowątkowo
         //enum - enum z jednym polem - odpowiednik implementacji eager
