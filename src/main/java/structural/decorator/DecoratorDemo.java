@@ -6,12 +6,14 @@ public class DecoratorDemo {
 
         /*Zaimplementuj wzorzec dekorator aby rozszerzyć zachowania obiektu podstawowego drzewka*/
 
+      //  ChristmasTree christmasTree = new TreeWithLightsDecorator(new ChristmasTreeImpl());
+
         //standardowe zachowanie bez dekoratora
         ChristmasTree simpleTree = new ChristmasTreeImpl();
         System.out.println(simpleTree.getDecoratedTree());
 
-        /*Twój kod przygotowujący drzewko świąteczne udekorowane światełkami*/
-        //System.out.println(treeWithLights.getDecoratedTree());
+        simpleTree = new TreeWithLightsDecorator(simpleTree);
+        System.out.println(simpleTree.getDecoratedTree());
         // -> ma drukować "świąteczne drzewko ze światełkami
 
         /*Twój kod przygotowujący drzewko świąteczne udekorowane bombkami i światełkami*/
