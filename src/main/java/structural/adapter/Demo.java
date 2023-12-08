@@ -15,11 +15,11 @@ public class Demo {
         uzupełnik nie kompilujący się fragment w podanym miejscu aby otrzymać oczekiwny
         * wynik w konsoli. Zastosuj wzorzec adapter oraz przelicznik 1 mila = 1,6 km */
         CarUS tesla = new Tesla(1000);
-       // CarEU teslaEu = /* your code*/;
+        CarEU teslaEu = new CarUsAdapter(tesla) ;
         CarEU bmw = new Bmw(5000);
 
         RaceSimulation raceSimulation = new RaceSimulation();
-       // raceSimulation.addCar(teslaEu);
+        raceSimulation.addCar(teslaEu);
         raceSimulation.addCar(bmw);
 
         raceSimulation.simulateRace(50);
