@@ -37,7 +37,6 @@ class WeatherStation {
         double pressure = random.nextDouble()*20 + 990; //990 - 1010
         WeatherData weatherData = new WeatherData(temp, humidity, pressure);
         weatherClients.forEach(client -> client.reactToWeatherChanged(weatherData));
-
     }
 
     private void waitForNextMeasurement() throws InterruptedException {
