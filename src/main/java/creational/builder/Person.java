@@ -3,7 +3,7 @@ package creational.builder;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Person {
+ class Person {
 
     private String fullName;
     private LocalDate birthDate;
@@ -11,34 +11,9 @@ public class Person {
     private String mail;
     private String address;
 
-    public Person(String fullName, String mail, String address) {
-        this.fullName = fullName;
-        this.mail = mail;
-        this.address = address;
-    }
 
-    public Person(String fullName, LocalDate birthDate, int phone, String mail, String address) {
-        this.fullName = fullName;
-        this.birthDate = birthDate;
-        this.phone = phone;
-        this.mail = mail;
-        this.address = address;
+    private Person() {
     }
-
-    public Person(String fullName, LocalDate birthDate, String mail, String address) {
-        this.fullName = fullName;
-        this.birthDate = birthDate;
-        this.mail = mail;
-        this.address = address;
-    }
-
-    public Person(String fullName, int phone, String mail, String address) {
-        this.fullName = fullName;
-        this.phone = phone;
-        this.mail = mail;
-        this.address = address;
-    }
-
 
     @Override
     public boolean equals(Object o) {
@@ -65,4 +40,44 @@ public class Person {
                 ", address='" + address + '\'' +
                 '}';
     }
+
+     public static Builder builder(String fullName) {
+         return new Builder()
+                 .withFullName(fullName);
+     }
+
+     public static Person createDummyPerson() {
+         return builder("Jan Kowalski")
+                 .build();
+     }
+
+    static class Builder {
+
+        private final Person person = new Person();
+
+        private Builder() {
+        }
+
+        public Builder withFullName(String fullName) {
+            person.fullName = fullName;
+            return this;
+        }
+
+        public Builder withMail(String mail) {
+            person.mail = mail;
+            return this;
+        }
+
+        public Builder withPhone(int phone) {
+            person.phone = phone;
+            return this;
+        }
+
+        public Person build() {
+            return person;
+        }
+
+    }
+
+
 }
