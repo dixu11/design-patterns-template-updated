@@ -1,4 +1,4 @@
-package behavioral.observator;
+package behavioral.observator.for_refactoring;
 
 public class WeatherPhoneObserver extends WeatherObserver {
     public WeatherPhoneObserver(WeatherBroadcaster broadcaster) {

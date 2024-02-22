@@ -1,4 +1,4 @@
-package behavioral.observator;
+package behavioral.observator.for_refactoring;
 
 public enum Weather {
     RAINING, SNOWING, CLOUDY, SUNNY, WINDY;

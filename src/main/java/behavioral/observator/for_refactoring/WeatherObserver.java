@@ -1,4 +1,4 @@
-package behavioral.observator;
+package behavioral.observator.for_refactoring;
 
 
 public abstract class WeatherObserver {

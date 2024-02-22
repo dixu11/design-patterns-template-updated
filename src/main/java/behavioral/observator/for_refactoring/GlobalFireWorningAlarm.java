@@ -1,4 +1,4 @@
-package behavioral.observator;
+package behavioral.observator.for_refactoring;
 
 public class GlobalFireWorningAlarm extends WeatherObserver{
     public GlobalFireWorningAlarm(WeatherBroadcaster broadcaster) {

@@ -1,4 +1,4 @@
-package behavioral.observator;
+package behavioral.observator.for_refactoring;
 
 import java.util.ArrayList;
 import java.util.List;
