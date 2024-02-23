@@ -14,6 +14,4 @@ public class Button {
             mediator.turnFanOn();
         }
     }
-
-
 }

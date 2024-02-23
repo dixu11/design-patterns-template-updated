@@ -3,21 +3,14 @@ package structural.decorator.coding.table;
 
 import java.util.*;
 
-public class ClassicTable implements Table {
+public class ClassicTable implements Table, ModifiableTable {
     private LinkedList<Object> items = new LinkedList<>();
+    private TableParams tableParams = new TableParams(3);
     @Override
     public void putOnTable(Object item) {
-        throwIfSize(getItemLimit());
-        add(item);
-    }
-
-    void throwIfSize(int size) {
-        if (items.size() >= size) {
-            throw new IllegalStateException("Table is full. Max items: " + size);
+        if (items.size() >= getItemLimit()) {
+            throw new IllegalStateException("Table is full. Max items: " + getItemLimit());
         }
-    }
-
-     void add(Object item) {
         items.add(item);
     }
 
@@ -30,11 +23,16 @@ public class ClassicTable implements Table {
 
     @Override
     public int getItemLimit() {
-        return 3;
+        return tableParams.getMaxSize();
     }
 
     @Override
     public Object removeLastItem() {
         return items.removeLast();
+    }
+
+    @Override
+    public TableParams getModifiableTableData() {
+        return tableParams;
     }
 }

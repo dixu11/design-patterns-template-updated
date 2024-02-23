@@ -12,7 +12,7 @@ import java.io.ObjectInputStream;
 
 class Demo {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        ClassicTable table = new ClassicTable();
+        Table table = new ClassicTable();
         table.putOnTable("szklanka");
         table.putOnTable("książka");
         table.putOnTable("karton");
@@ -30,7 +30,7 @@ class Demo {
         compactTable.putOnTable("Kot");
 
 
-/*
+
 
         FoldingTable foldingTable = new FoldingTable(compactTable);
         System.out.println(foldingTable.getItems());
@@ -43,7 +43,7 @@ class Demo {
         foldingTable.removeLastItem();
         foldingTable.fold();
         foldingTable.putOnTable("Laptop");
-*/
+
 
         FileInputStream fileInputStream = new FileInputStream("file.bin");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
