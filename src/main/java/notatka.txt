@@ -11,20 +11,25 @@
         Dekorator (obiektowy) - rozszerzanie działania obiektu, alternatywa dla dziedziczenia, wykorzystuje kompozycje, składanie w trakcie działania aplikacji
         Pełnomocnik/proxy (obiektowy) - opakowywanie obiektu mające na celu wykonanie dodatkowej pomocniczej pracy - cashowanie, walidacja, statystyki itd.
         Kompozyt (obiektowy) - wspólny interfejs dla złożonych obiektów i pojedycznych - dla wygody klienta. np. foldery i pliki
-        Pyłek (obiektowy);
+        Most (obiektowy) - rozdzielenie abstrakcji od konkretnych implementacji na poziomie struktury. Shape ma Color. Tank ma Gun. Figure ma Behavior
         Fasada (obiektowy) - klasa która upraszcza dostęp do skomplikowanego systemu, z zewnątrz korzystamy z fasady zamiast z jego pojedynczych elementów
-        Most (obiektowy),
+        Pyłek (obiektowy) - optymalizuje pamięć poprzez oddzielenie wspólnych ciężki danych od małych obiektów do których trafia referencja do części wspólnej.
+                            wymaga tworzenia przez klasę fabryki która cashuje (np w mapie) wspólne części
+
 
     wzorce czynnościowe/operacyjne:
         Łańcuch zobowiązań/odpowiedzialności (obiektowy),
         Polecenie (obiektowy),
         Interpreter (klasowy),
         Iterator (obiektowy),
-        Mediator (obiektowy),
+        Mediator (obiektowy) - mediator ułatwia komunikacje między obiektami systemu wprowadzając jedną klasę przez którą
+                                wszystkie inne zwracają się do siebie (zamiast bezpośrednio)
+
+
         Pamiątka/Memento (ang. Memento) (obiektowy),
         Metoda szablonowa (ang. template method) (klasowy),
         Obserwator (obiektowy),
         Stan (obiektowy),
         Strategia (obiektowy),
         Odwiedzający/Wizytator (ang. visitor) (obiektowy),
-        Zabór Zasobu Jest Inicjalizacją (obiektowy).
+
