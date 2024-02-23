@@ -18,17 +18,25 @@
 
 
     wzorce czynnościowe/operacyjne:
-        Łańcuch zobowiązań/odpowiedzialności (obiektowy),
-        Polecenie (obiektowy),
+        Łańcuch zobowiązań/odpowiedzialności (obiektowy) - zapytanie przechodzi przez łańcuch serwisów z których każdy może wykonać swoją część pracy.
         Interpreter (klasowy) - rozumienie słów jako operacji do wykonania w programie (GIT, interpretery np. pythona, JS)
         Iterator (obiektowy) - przeglądanie obiektu element po elemencie. Fundament kolekcji (for each opiera się na interfejsie Iterable)
                                 nie zmieniaj struktury zbioru który iterujesz!
         Mediator (obiektowy) - mediator ułatwia komunikacje między obiektami systemu wprowadzając jedną klasę przez którą
                                 wszystkie inne zwracają się do siebie (zamiast bezpośrednio)
-        Pamiątka/Memento (ang. Memento) (obiektowy),
-        Metoda szablonowa (ang. template method) (klasowy),
-        Obserwator (obiektowy),
-        Stan (obiektowy),
-        Strategia (obiektowy),
-        Odwiedzający/Wizytator (ang. visitor) (obiektowy),
+        Obserwator (obiektowy) - lista klientów którzy nasłuchują (Listener) na informację.
+                                Obserwowany, wywołuje ich metode przekazując dane jako obiekt transportowy (DTO/record)
+                                Luźna relacja między obserwowanym a obserwatorami (SOLID!)
+
+        Strategia (obiektowy) - pozwala podmieniać działanie obiektu (algorytm) na podstawie jego stanu w trakcie działania programu
+        Stan (obiektowy) - tak jak strategia ale zmiana stanu zmienia całkowicie zachowanie obiektu
+        Metoda szablonowa (ang. template method) (klasowy) -
+                                niezmienny schemat algorytmu przenosimy do abstrakcyjnej klasy, zmienne kroki nadpisujemy w klasach implementujących
+        Pamiątka/Memento (ang. Memento) (obiektowy) - zapisuje wcześniejsze stany obiektu do których można przywracać obiekt.
+                                                        Robi to z zachowaniem hermetyzacji
+        Polecenie (obiektowy) - wywołanie metody zastępujemy całym osobnym obiektem polecenia. Dzięki czemu: separujemy od odbiorcy,
+                                możemy archiwizować, kolejkować, cofać, odsuwać w czasie
+        Odwiedzający/Wizytator (ang. visitor) (obiektowy) - mała ilość obiektów - dodajemy bardzo wiele operacji bez modyfikowania klas tych obiektów
+                                umożliwia "double dispatch" - podwójne dziedziczenie. działanie wynika z miejsca obiektów w 2 różnych hierarchiach
+
 

@@ -2,28 +2,28 @@ package behavioral.template_method;
 
 import java.util.Scanner;
 
-public class TextConverter {
+public abstract class TextConverter {
 
-    public void runConverter() {
-        //TODO przerób te metodę na metodę szablonową -> przygotuj 2 klasy implementujące ten szablon
+    static final String WELCOME_MESSAGE = "Wpisz zdanie - postaram się, wyświetlić je od tyłu :)";
+    static final String RESULT_MESSAGE = "Twoje zdanie:";
 
-        //Przewidziane kroki algorytmu:
-        //krok 1: Wczytanie danych
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Wpisz zdanie - postaram się, wyświetlić je od tyłu :)");
-        String sentence = scanner.nextLine();
 
-        //krok 2: przetworzenie zdania
-        String[] words = sentence.split(" ");
-        String sentenceBackward = "";
-        for (int i = words.length - 1; i >= 0; i--) {
-            String word = words[i];
-            sentenceBackward += word + " ";
-        }
-
-        //krok 3: zaprezentuj rezultaty
-        System.out.println("Twoje zdanie: ");
-        System.out.println(sentenceBackward);
+    public final void runConverter() {
+        String sentence = readSentence();
+        String sentenceBackward = reverseSentence(sentence);
+        showResults(sentenceBackward);
     }
 
+    abstract String readSentence();
+
+    private String reverseSentence(String sentence) {
+        String[] words = sentence.split(" ");
+        StringBuilder sentenceBackward = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            String word = words[i];
+            sentenceBackward.append(word).append(" ");
+        }
+        return sentenceBackward.toString();
+    }
+    abstract void showResults(String sentenceBackward);
 }
