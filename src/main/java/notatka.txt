@@ -1,0 +1,29 @@
+    wzorce kreacyjne:
+        Budowniczy (obiektowy) - tworzenie etapami jednego obiektu ( wygodniejsze niż konstruktor), wewnętrzna statyczna klasa
+        Fabryka abstrakcyjna (obiektowy) - kilka fabryk za jednym interfejsem tworzące całe rodziny obiektów po wspólnym typie
+        Metoda wytwórcza (klasowy) - obiekt wytwarza pomocniczy obiekt. Rozdzielono abstrakcje od konkretów w ramach hierarchi dziedziczenia
+        Prototyp (obiektowy) - tworzy kopię obiektu. metoda clone z Object robi powierzchowną kopię (te same referencje), czasem potrzebujemy głębszej
+        Singleton (obiektowy) - max 1 obiekt danej klasy, dostępny publicznie. statyczny dostęp. lazy (uwaga na wielowątkowość), eager.
+
+    wzorce strukturalne:
+        Adapter (klasowy oraz obiektowy),
+        Dekorator (obiektowy),
+        Fasada (obiektowy),
+        Kompozyt (obiektowy),
+        Most (obiektowy),
+        Pełnomocnik (obiektowy),
+        Pyłek (obiektowy);
+
+    wzorce czynnościowe/operacyjne:
+        Łańcuch zobowiązań/odpowiedzialności (obiektowy),
+        Polecenie (obiektowy),
+        Interpreter (klasowy),
+        Iterator (obiektowy),
+        Mediator (obiektowy),
+        Pamiątka/Memento (ang. Memento) (obiektowy),
+        Metoda szablonowa (ang. template method) (klasowy),
+        Obserwator (obiektowy),
+        Stan (obiektowy),
+        Strategia (obiektowy),
+        Odwiedzający/Wizytator (ang. visitor) (obiektowy),
+        Zabór Zasobu Jest Inicjalizacją (obiektowy).

@@ -1,4 +1,4 @@
 Wykorzystaj wzorzec builder aby Ułatwić tworzenie obiektu Person
 - wykorzystaj fluent interface
 - wykorzystaj statyczne metody aby ukryć całkowicie obecność buildera z punktu widzenia użytkownika modelu
-- stwóz metodę "buildDefaultPerson" zwracającą obiekt person z dowolnymi wymyślonymi przez Ciebie wartościami w każdym z pól
+- stwóz metodę "buildDefaultPerson" zwracającą obiekt personImpl z dowolnymi wymyślonymi przez Ciebie wartościami w każdym z pól
