@@ -6,13 +6,14 @@
         Singleton (obiektowy) - max 1 obiekt danej klasy, dostępny publicznie. statyczny dostęp. lazy (uwaga na wielowątkowość), eager.
 
     wzorce strukturalne:
-        Adapter (klasowy oraz obiektowy),
-        Dekorator (obiektowy),
-        Fasada (obiektowy),
-        Kompozyt (obiektowy),
-        Most (obiektowy),
-        Pełnomocnik (obiektowy),
+    Na zasadzie wrappera: udaje obiekt przez wspólny interfejs + zawiera obiekt i odsyła do jego działania:
+        Adapter (klasowy oraz obiektowy) - gdy chcemy dopasować nasz obiekt do istniejącego interfejsu bez modyfikowania obiektu
+        Dekorator (obiektowy) - rozszerzanie działania obiektu, alternatywa dla dziedziczenia, wykorzystuje kompozycje, składanie w trakcie działania aplikacji
+        Pełnomocnik/proxy (obiektowy) - opakowywanie obiektu mające na celu wykonanie dodatkowej pomocniczej pracy - cashowanie, walidacja, statystyki itd.
+        Kompozyt (obiektowy) - wspólny interfejs dla złożonych obiektów i pojedycznych - dla wygody klienta. np. foldery i pliki
         Pyłek (obiektowy);
+        Fasada (obiektowy) - klasa która upraszcza dostęp do skomplikowanego systemu, z zewnątrz korzystamy z fasady zamiast z jego pojedynczych elementów
+        Most (obiektowy),
 
     wzorce czynnościowe/operacyjne:
         Łańcuch zobowiązań/odpowiedzialności (obiektowy),
