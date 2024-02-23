@@ -30,8 +30,9 @@ class Demo {
         compactTable.putOnTable("Kot");
 
 
+/*
 
-  /*      FoldingTable foldingTable = new FoldingTable(compactTable);
+        FoldingTable foldingTable = new FoldingTable(compactTable);
         System.out.println(foldingTable.getItems());
         System.out.println(foldingTable.getItemLimit());
         foldingTable.unfold();
@@ -41,7 +42,8 @@ class Demo {
         foldingTable.removeLastItem();
         foldingTable.removeLastItem();
         foldingTable.fold();
-        foldingTable.putOnTable("Laptop");*/
+        foldingTable.putOnTable("Laptop");
+*/
 
         FileInputStream fileInputStream = new FileInputStream("file.bin");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
