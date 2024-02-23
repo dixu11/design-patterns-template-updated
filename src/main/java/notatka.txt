@@ -20,12 +20,11 @@
     wzorce czynnościowe/operacyjne:
         Łańcuch zobowiązań/odpowiedzialności (obiektowy),
         Polecenie (obiektowy),
-        Interpreter (klasowy),
-        Iterator (obiektowy),
+        Interpreter (klasowy) - rozumienie słów jako operacji do wykonania w programie (GIT, interpretery np. pythona, JS)
+        Iterator (obiektowy) - przeglądanie obiektu element po elemencie. Fundament kolekcji (for each opiera się na interfejsie Iterable)
+                                nie zmieniaj struktury zbioru który iterujesz!
         Mediator (obiektowy) - mediator ułatwia komunikacje między obiektami systemu wprowadzając jedną klasę przez którą
                                 wszystkie inne zwracają się do siebie (zamiast bezpośrednio)
-
-
         Pamiątka/Memento (ang. Memento) (obiektowy),
         Metoda szablonowa (ang. template method) (klasowy),
         Obserwator (obiektowy),
